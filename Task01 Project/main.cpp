@@ -15,10 +15,13 @@ int main() {
 	cin >> value;
 
 	init(arr, size, -20, 50);
-	cout << "Array: " << convert(arr, size) << endl;
+	cout << "\nArray: " << convert(arr, size) << endl;
 
 	string msg = find_value(arr, size, value) == 1 ? "YES" : "NO";
 	cout << "Array: " << msg << endl;
+
+	cout << "First value index is "
+		<< find_first_value_index(arr, size, value) << endl;
 
 	return 0;
 }
