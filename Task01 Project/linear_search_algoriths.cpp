@@ -1,5 +1,3 @@
-
-
 bool find_value(int* arr, int size, int value) {
 
 	for (int i = 0; i < size; i++)
@@ -28,13 +26,13 @@ int find_first_value_index(int* arr, int size, int value) {
 
 int find_last_value_index(int* arr, int size, int value) {
 
-	//for (int i = 0; i < size; i++)
-	//{
+	for (int i = size - 1; i != 0; i--)
+	{
+		if (arr[i] == value) {
+			return i;
+		}
+	}
 
-	//	if(arr[i])
-
-	//}
-
-
-	return 0;
+	return -1;
 }
+

@@ -18,10 +18,13 @@ int main() {
 	cout << "\nArray: " << convert(arr, size) << endl;
 
 	string msg = find_value(arr, size, value) == 1 ? "YES" : "NO";
-	cout << "Array: " << msg << endl;
+	cout << "\nArray: " << msg << endl;
 
 	cout << "First value index is "
-		<< find_first_value_index(arr, size, value) << endl;
+		<< find_first_value_index(arr, size, value) << ".\n";
+
+	cout << "Last value index is "
+		<< find_last_value_index(arr, size, value) << ".\n";
 
 	return 0;
 }
