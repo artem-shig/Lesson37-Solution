@@ -26,5 +26,8 @@ int main() {
 	cout << "Last value index is "
 		<< find_last_value_index(arr, size, value) << ".\n";
 
+	cout << "Count of value: "
+		<< count_value(arr, size, value) << ".\n";
+
 	return 0;
 }
